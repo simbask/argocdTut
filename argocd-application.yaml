@@ -9,8 +9,8 @@ spec:
     namespace: 'your-namespace'
   project: default
   source:
-    repoURL: 'https://github.com/your-repo'
-    path: path/to/your/deployment.yaml
+    repoURL: 'https://github.com/simbask/argocdTut'
+    path: https://github.com/simbask/argocdTut/deployment.yaml
     targetRevision: main
   syncPolicy:
     automated: true
