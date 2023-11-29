@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: python-app-deployment
+  namespace: argocd
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: 'your-namespace'
+  project: default
+  source:
+    repoURL: 'https://github.com/your-repo'
+    path: path/to/your/deployment.yaml
+    targetRevision: main
+  syncPolicy:
+    automated: true
+    prune: true
+    syncOptions:
+      - CreateNamespace=true
