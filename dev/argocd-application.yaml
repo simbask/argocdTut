@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/simbask/argocdTut'
-    path: deployment.yaml
+    path: dev
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
