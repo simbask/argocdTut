@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: 'https://github.com/simbask/argocdTut'
     path: dev
-    targetRevision: HEAD
+    targetRevision: main
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
