@@ -4,8 +4,8 @@
 def sum(a, b):
     return (a + b)
 
-a = int(input('Enter 1st number: '))
-b = int(input('Enter 2nd number: '))
+a = 25
+b = 50
 
 result = sum(a, b)
 print(f"Value {a} and value {b} is {result}")
